@@ -8,7 +8,7 @@ public class Person {
         System.out.println("Empty constructor called");
     }
 
-    public Person()
+//    public Person()
 
     public String getFirstName() {
         return firstName;
