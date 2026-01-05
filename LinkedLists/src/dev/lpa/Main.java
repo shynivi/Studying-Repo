@@ -22,7 +22,9 @@ public class Main {
 //        System.out.println(placesToVisit);
 
         //gettingElements(placesToVisit);
-        printItinerary3(placesToVisit);
+        //printItinerary3(placesToVisit);
+
+        testIterator(placesToVisit);
     }
 
     private static void addMoreElements(LinkedList<String> list)
@@ -121,6 +123,15 @@ public class Main {
             previousTown = town;
         }
         System.out.println("Trip ends at " + list.getLast());
+    }
+
+    private static void testIterator(LinkedList<String> list)
+    {
+        var iterator = list.iterator();
+        while(iterator.hasNext())
+        {
+            System.out.println(iterator.next());
+        }
     }
 
 }
